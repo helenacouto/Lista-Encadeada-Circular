@@ -1,0 +1,5 @@
+output/
+*.exe
+*.pdf
+*.o
+*.zip
