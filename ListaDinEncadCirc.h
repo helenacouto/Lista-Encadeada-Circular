@@ -104,20 +104,14 @@ int busca_lista_pos(Lista* li, int pos, struct aluno *al);
 /* Busca pelo conteudo do campo matricula. Custo O(n). */
 int busca_lista_mat(Lista* li, int mat, struct aluno *al);
 
+/* =========== ATIVIDADE =========== */
 void imprime_lista(Lista* li);
-
 int maior_matricula(Lista *li, int *mat);
-
 int conta_aprovados(Lista *li);
-
 int busca_ciclica(Lista* li, int k, struct aluno *al);
-
 int remove_lista_pos(Lista* li, int pos);
-
 int rotaciona_lista(Lista* li, int k);
-
 int concatena_listas(Lista* li, Lista* li2);
-
 int josephus(Lista* li, int k, int *sobrevivente);
 
 #endif /* LISTA_DIN_ENCAD_CIRC_H */

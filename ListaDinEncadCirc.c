@@ -250,7 +250,7 @@ int busca_lista_mat(Lista* li, int mat, struct aluno *al) {
     }
 }
 
-/* QUESTÃO 1 */
+/* =========== QUESTÃO 1 =========== */
 void imprime_lista(Lista *li) {
     if (li == NULL || (*li) == NULL) return;
     Elem *no = *li;
@@ -262,7 +262,7 @@ void imprime_lista(Lista *li) {
     printf("\n");
 }
 
-/* QUESTÃO 2 */
+/* =========== QUESTÃO 2 =========== */
 int maior_matricula(Lista *li, int *mat) {
     if (li == NULL || (*li) == NULL) return 0;
 
@@ -279,7 +279,8 @@ int maior_matricula(Lista *li, int *mat) {
     return 1;
 }
 
-/* QUESTÃO 3
+/* =========== QUESTÃO 3 =========== */
+/*
 O código com defeito apresentado possui dois problemas.
 O primeiro é que a função não tem uma seção que verifica
 se a lista é válida. O segundo é que como estamos abordando
@@ -302,7 +303,7 @@ int conta_aprovados(Lista *li) {
     return cont;
 }
 
-/* QUESTÃO 4 */
+/* =========== QUESTÃO 4 =========== */
 int busca_ciclica(Lista* li, int k, struct aluno *al) {
     if (li == NULL || *li == NULL || k <= 0) return 0;
 
@@ -315,7 +316,7 @@ int busca_ciclica(Lista* li, int k, struct aluno *al) {
     return 1;
 }
 
-/* QUESTÃO 5 */
+/* =========== QUESTÃO 5 =========== */
 int remove_lista_pos(Lista* li, int pos) {
     if (li == NULL || *li == NULL) return 0;
     if (pos < 1 || pos > tamanho_lista(li)) return 0;
@@ -332,7 +333,8 @@ int remove_lista_pos(Lista* li, int pos) {
     return 1;
 }
 
-/* QUESTÃO 6
+/* =========== QUESTÃO 6 =========== */
+/*
 Resposta 1: O custo é O(k). A função só avança *li k vezes, sem procurar o
 último elemento e sem alterar nenhum prox, porque o fim já está ligado ao
 início. Por isso, para k pequeno ela custa bem menos que percorrer a lista
@@ -352,7 +354,8 @@ int rotaciona_lista(Lista* li, int k) {
     return 1;
 }
 
-/* QUESTÃO 7
+/* =========== QUESTÃO 7 =========== */
+/*
 Resposta: O custo seria O(1). Com (*li) guardando o último elemento de cada
 lista, os dois últimos são acessados direto e os primeiros são os prox
 deles. Basta trocar dois ponteiros (o último de li1 passa a apontar para o
@@ -385,7 +388,7 @@ int concatena_listas(Lista* li, Lista* li2) {
     return 1;
 }
 
-/* QUESTÃO 8 */
+/* =========== QUESTÃO 8 =========== */
 int josephus(Lista* li, int k, int *sobrevivente) {
     if (li == NULL || *li == NULL || k <= 0) return 0;
 
